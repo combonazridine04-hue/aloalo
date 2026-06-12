@@ -1,0 +1,21 @@
+
+.footer-section { background: linear-gradient(135deg, #eff6ff, #ede9fe); }
+.cta-title { font-size: 2rem; font-weight: 800; color: #0f172a; margin-bottom: 12px; }
+.cta-sub { color: #64748b; margin-bottom: 28px; }
+.cta-shop-btn {
+  background: #2563eb;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.cta-shop-btn:hover {
+  background: #1d4ed8;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37,99,235,0.3);
+}

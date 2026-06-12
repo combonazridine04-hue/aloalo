@@ -1,0 +1,113 @@
+
+.custom-navbar {
+  background: rgba(3, 37, 51, 0.35) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(3, 117, 148, 0.2);
+  padding: 1rem 0;
+  transition: all 0.4s ease;
+  position: relative;
+}
+.custom-navbar.scrolled {
+  background: rgba(3, 19, 28, 0.88) !important;
+  border-bottom: 1px solid rgba(3, 117, 148, 0.45);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  padding: 0.6rem 0;
+}
+.navbar-glow-line {
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 55%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(3,117,148,0.8), transparent);
+}
+.brand-icon { font-size: 1.4rem; margin-right: 6px; }
+.brand-name {
+  font-weight: 800; font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(3,117,148,0.8);
+}
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+.nav-link {
+  font-weight: 500;
+  color: rgba(255,255,255,0.8) !important;
+  padding: 7px 16px !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-link:hover, .nav-link.router-link-active {
+  color: #ffffff !important;
+  background: rgba(3,117,148,0.15);
+  text-shadow: 0 0 12px rgba(3,117,148,0.7);
+}
+.cart-btn {
+  display: flex; align-items: center; gap: 7px;
+  background: rgba(3,117,148,0.2);
+  border: 1px solid rgba(3,117,148,0.5);
+  color: #fff;
+  padding: 9px 22px; border-radius: 50px;
+  text-decoration: none; font-weight: 600;
+  transition: all 0.3s ease;
+}
+.cart-btn:hover {
+  background: rgba(3,117,148,0.4);
+  border-color: #037594;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(3,117,148,0.4);
+}
+.cart-badge {
+  background: #037594; color: white;
+  border-radius: 50%; width: 20px; height: 20px;
+  font-size: 0.7rem; display: flex;
+  align-items: center; justify-content: center;
+  font-weight: 800;
+  animation: pulse-badge 2.5s infinite;
+}
+@keyframes pulse-badge {
+  0%,100% { box-shadow: 0 0 6px rgba(3,117,148,0.7); transform: scale(1); }
+  50%      { box-shadow: 0 0 14px rgba(3,117,148,1); transform: scale(1.1); }
+}
+.navbar-toggler {
+  border: 1px solid rgba(3,117,148,0.5);
+  border-radius: 10px; background: rgba(3,117,148,0.1);
+}
+.navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(3,117,148,0.35); outline: none; }
+.navbar-toggler-icon { filter: invert(1); }
+@media (min-width: 992px) {
+  .navbar-actions {
+    order: 3;
+  }
+  .navbar-collapse {
+    order: 2;
+  }
+}
+@media (max-width: 991px) {
+  .custom-navbar .container {
+    gap: 10px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-actions {
+    margin-left: auto;
+  }
+  .cart-btn {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+  .cart-btn span:nth-child(2) {
+    display: none;
+  }
+  .navbar-collapse {
+    background: rgba(3,19,28,0.97);
+    border: 1px solid rgba(3,117,148,0.25);
+    border-radius: 14px; padding: 16px; margin-top: 12px;
+  }
+}

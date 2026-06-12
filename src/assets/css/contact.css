@@ -1,0 +1,6 @@
+
+.contact-info { display: flex; flex-direction: column; gap: 24px; }
+.info-item { display: flex; align-items: flex-start; gap: 16px; }
+.info-icon { font-size: 1.5rem; flex-shrink: 0; }
+.info-label { font-weight: 700; color: #72767e; margin-bottom: 2px; font-size: 0.95rem; }
+.info-value { color: #a6b6cb; font-size: 0.9rem; margin: 0; }

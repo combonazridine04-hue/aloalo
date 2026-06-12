@@ -1,0 +1,126 @@
+
+
+.detail-page { background: white; min-height: 80vh; }
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+.breadcrumb-nav a { color: #2563eb; text-decoration: none; }
+.breadcrumb-nav a:hover { text-decoration: underline; }
+.breadcrumb-nav .current { color: #334155; font-weight: 600; }
+/* Main image */
+.img-main {
+  position: relative;
+  background: #f8fafc;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.main-img {
+  max-height: 320px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+.detail-discount {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #ef4444;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.img-thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 4px;
+  transition: border-color 0.2s;
+}
+.thumb.active, .thumb:hover { border-color: #2563eb; }
+/* Info */
+.detail-category {
+  font-size: 0.78rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+.detail-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+.detail-rating { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.stars { color: #f59e0b; }
+.rating-num { color: #94a3b8; font-size: 0.9rem; }
+.stock-badge { padding: 3px 10px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.in-stock { background: #dcfce7; color: #16a34a; }
+.out-stock { background: #fee2e2; color: #dc2626; }
+.detail-price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+.price-main { font-size: 2rem; font-weight: 900; color: #0f172a; }
+.price-original { font-size: 1rem; color: #94a3b8; text-decoration: line-through; }
+.detail-desc { color: #64748b; line-height: 1.8; margin-bottom: 24px; }
+.detail-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; background: #f8fafc; border-radius: 12px; padding: 20px; }
+.meta-item { display: flex; flex-direction: column; gap: 4px; }
+.meta-label { font-size: 0.75rem; color: #94a3b8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.meta-val { font-size: 0.9rem; font-weight: 600; color: #334155; }
+.detail-actions { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.add-to-cart-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+.add-to-cart-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.3);
+}
+.add-to-cart-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.go-cart-btn {
+  border: 2px solid #e2e8f0;
+  color: #334155;
+  padding: 14px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.go-cart-btn:hover { border-color: #2563eb; color: #2563eb; }
+.added-confirm { color: #16a34a; font-weight: 600; }
+/* Loading */
+.loading-detail { display: flex; gap: 40px; }
+.skeleton-img { width: 400px; height: 380px; background: #f1f5f9; border-radius: 16px; flex-shrink: 0; }
+.skeleton-info { flex: 1; }
+.skeleton-line { background: #f1f5f9; border-radius: 8px; margin-bottom: 16px; height: 20px; }
+.skeleton-line.long { width: 90%; height: 36px; }
+.skeleton-line.medium { width: 60%; }
+.skeleton-line.short { width: 40%; }
+.not-found { text-align: center; padding: 80px; }
+.not-found span { font-size: 3rem; display: block; margin-bottom: 16px; }
+.back-link { color: #2563eb; font-weight: 600; text-decoration: none; }

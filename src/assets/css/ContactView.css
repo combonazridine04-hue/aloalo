@@ -1,0 +1,41 @@
+
+.page-header {
+  background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+  padding: 60px 0 40px;
+}
+.page-title { font-size: 2.5rem; font-weight: 900; color: #0f172a; letter-spacing: -1px; margin-bottom: 8px; }
+.page-sub { color: #969eaa; }
+.form-card, .info-card, .faq-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px;
+}
+.form-card-title, .info-card-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #a3abbe;
+  margin-bottom: 24px;
+}
+.faq-title { font-size: 1.1rem; font-weight: 800; color: #b2b8c7; margin-bottom: 16px; }
+.faq-item { border-bottom: 1px solid #bdd0e3; }
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  padding: 14px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #a7adb5;
+  cursor: pointer;
+}
+.faq-q:hover { color: #2563eb; }
+.faq-a {
+  padding: 0 0 14px;
+  font-size: 0.88rem;
+  color: #c9d4e7;
+  line-height: 1.6;
+}
